@@ -1,5 +1,3 @@
-import ssl
-
 Queue = []
 def push(item):
 	Queue.append(item)
@@ -17,11 +15,10 @@ def top():
 	print('Top Item from Queue :',Queue[0])
 
 def isempty():
-	if len(Queue)> 0:
-		return True
-	else:
+	if len(Queue)<= 0:
 		return False
-
+	else:
+		return True
 push(3)
 push(4)
 push(5)
@@ -30,4 +27,6 @@ pop()
 top()
 pop()
 top()
+pop()
+pop()
 pop()
