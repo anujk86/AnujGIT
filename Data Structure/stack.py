@@ -1,5 +1,3 @@
-import ssl
-
 stack = []
 def push(item):
 	stack.append(item)
@@ -17,17 +15,17 @@ def top():
 	print('Top Item from Stack :',stack [len(stack)-1])
 
 def isempty():
-	if len(stack)> 0:
-		return True
-	else:
+	if len(stack)<= 0:
 		return False
-
+	else:
+		return True
 push(3)
 push(4)
 push(5)
 top()
 pop()
 top()
+pop()
 pop()
 pop()
 pop()
